@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Sulis oldal</title>
+</head>
+<body>
+    <form  method="post">
+        <div class="container">
+          <h2>Valami szöveg</h2>
+          <p>Csodasuli adatbázis</p>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Vezetéknév" name="name1" id="name1" required>
+          <input type="text" placeholder="Keresztnév " name="name2" id="name2" required>
+          <input type="text" placeholder="Email" name="email" id="email" required>
+          <input type="text" placeholder="Osztály" name="class" id="class" required>
+          <input type="text" placeholder="Születési dátum" name="birthyear" id="birthyear" required>
+
+
+
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Ingyen fagyi!
+          </label>
+        </div>
+      
+        <div class="container">
+            <button onclick="sendPost()" id="sub" type="submit" value="Submit">Hozzáadás</button>
+        
+        </div>
+      </form>
+      <script src="add.js">
+    </script>
+</body>
+</html>
